@@ -12,7 +12,7 @@ body{
 
 .items-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-content: center;
     align-items: center;
     position: relative;
@@ -49,4 +49,11 @@ color: #a6a6a6;
 .item h3{
     font: 1.4rem 'Forum';
     margin: 0;
+}
+
+@media (min-width:550px){
+    .items-container{
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        
+    }
 }
