@@ -49,12 +49,16 @@ font-size: 0.9rem;
 /* color: #a6a6a6; */
 color: #777;
 padding: 0.2rem;
+letter-spacing: 1px;
+line-height: 1.3;
 }
 .text-content .price{
     font-size: 1rem;
+    color: #0b5e0d;
 }
 .item h3{
-    font-size: 1.4rem; 
+    font-size: 1.2rem;
+    color: #0762d9; 
 }
 
 @media (min-width:550px){
@@ -88,8 +92,9 @@ a{
 }
 .current-item{
     text-align: center;
-    padding: 0.5rem;
+    padding: 1rem;
     color: #0762d9;
+    text-transform: capitalize;
 }
 .current-item{
     font-weight: 700;
@@ -97,4 +102,8 @@ a{
 .category-title{
     padding: 0.5rem 2.5rem;
     color: #0762d9;
+    font-weight: bolder;
+}
+.hide-category{
+    display: none;
 }
