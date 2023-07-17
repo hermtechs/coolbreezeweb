@@ -75,23 +75,26 @@ padding: 0.2rem;
 a{
     text-decoration: none;
     color: #000;
+
 }
 .categories-list a{
     font-weight: light;
 /* color:#0762d9; */
-    border: 1px solid #000;
+    border: 1.2px solid #0762d9;
     padding: 0.2rem 0.3rem;
     border-radius: 0.3rem;
-    /* color: #0762d9; */
+    color: #0762d9;
 
 }
 .current-item{
     text-align: center;
     padding: 0.5rem;
+    color: #0762d9;
 }
 .current-item{
     font-weight: 700;
 }
 .category-title{
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 2.5rem;
+    color: #0762d9;
 }
