@@ -34,6 +34,10 @@ body{
     gap: 2rem;
     flex-shrink: 0;
     /* align-items: flex-start; */
+    transition: 200ms ease-in;
+}
+.item:hover{
+    background: #eeee;
 }
 /* .text-content{
     padding: 0.5rem;
