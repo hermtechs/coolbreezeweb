@@ -38,26 +38,30 @@ function showAllProducts() {
   });
 }
 
-
 //image viewer/modal
 // Get the modal
 var modal = document.getElementById("myModal");
-
+const modalOverlay = document.querySelector('.modal-container-overlay');
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var productImg = document.querySelectorAll(".product-image");
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
-productImg.forEach(img=>img.addEventListener('click', (e)=>{
+productImg.forEach((img) =>
+  img.addEventListener("click", (e) => {
     modal.style.display = "block";
     // modalImg.src = this.src;
-    modalImg.src = e.currentTarget.src
+    modalImg.src = e.currentTarget.src;
     captionText.innerHTML = this.alt;
-}))
+  })
+);
 
-// Get the <span> element that closes the modal
-var span = document.querySelector(".close-photo-viewer");
+// Get the <closeModalButton> element that closes the modal
+var closeModalButton = document.querySelector(".close-photo-viewer");
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
+// When the user clicks on <closeModalButton> (x), close the modal
+const closeModal = () => {
   modal.style.display = "none";
-}
+};
+closeModalButton.onclick = closeModal;
+
+modal.onclick = closeModal;
