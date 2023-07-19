@@ -41,7 +41,7 @@ function showAllProducts() {
 //image viewer/modal
 // Get the modal
 var modal = document.getElementById("myModal");
-const modalOverlay = document.querySelector('.modal-container-overlay');
+const modalOverlay = document.querySelector(".modal-container-overlay");
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var productImg = document.querySelectorAll(".product-image");
 var modalImg = document.getElementById("img01");
@@ -51,7 +51,11 @@ productImg.forEach((img) =>
     modal.style.display = "block";
     // modalImg.src = this.src;
     modalImg.src = e.currentTarget.src;
-    captionText.innerHTML = this.alt;
+    const parentElement = e.target.parentElement;
+    const productName = parentElement.querySelector("#product-title").innerText;
+    // console.log(productName);
+    captionText.innerText = productName;
+
   })
 );
 
