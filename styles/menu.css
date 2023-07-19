@@ -62,7 +62,7 @@ body{
 } */
 .item img{
     width: 110px;
-    max-height: 110px;
+    max-height: 130px;
     /* object-fit: cover; */
     border-radius: 0.2rem;
 }
