@@ -8,11 +8,16 @@
 /* img{
     max-width: 100%;
 } */
+html{
+    scroll-behavior: smooth;
+}
 nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: #0762d9;
+    /* background: #0762d9; */
+    background-color: #2a2a72;
+    background-image: linear-gradient(-315deg, #1a1aca 0%, #007efd 74%);
 }
 nav a{
     color: #ffff;
@@ -127,4 +132,20 @@ a{
 }
 .hide-category{
     display: none;
+}
+.back-to-top{
+    background: #0762d9;
+    padding:0.8rem 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 41px;
+    justify-items: center;
+    border-radius: 50%;
+    opacity: 0.7;
+    position: fixed;
+    /* left: 0; */
+    bottom: 0;
+    right: 0;
+    margin: 1rem;
 }
