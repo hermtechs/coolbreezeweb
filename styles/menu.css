@@ -8,6 +8,19 @@
 /* img{
     max-width: 100%;
 } */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #0762d9;
+}
+nav a{
+    color: #ffff;
+    text-transform: uppercase;
+}
+.logo img{
+    height: 70px;
+}
 body{
     /* font-family: DM Sans; */
     font-family: 'Rubik', sans-serif;
