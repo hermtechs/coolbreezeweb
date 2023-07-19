@@ -5,9 +5,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-img{
+/* img{
     max-width: 100%;
-}
+} */
 body{
     /* font-family: DM Sans; */
     font-family: 'Rubik', sans-serif;
@@ -28,9 +28,11 @@ body{
     background: #ffff;
 }
 .item{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
     padding: 1rem;
     gap: 2rem;
+    flex-shrink: 0;
     /* align-items: flex-start; */
 }
 /* .text-content{
