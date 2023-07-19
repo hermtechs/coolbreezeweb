@@ -41,7 +41,7 @@ body{
 .item img{
     width: 110px;
     max-height: 110px;
-    object-fit: cover;
+    /* object-fit: cover; */
     border-radius: 0.2rem;
 }
 .item p{
@@ -102,9 +102,11 @@ a{
     font-weight: 700;
 }
 .category-title{
-    padding: 0.5rem 2.5rem;
-    color: #0762d9;
+    padding: 1rem 2.5rem;
+    color: #3107d9;
     font-weight: bolder;
+    text-align: center;
+    font-size: 1.3rem;
 }
 .hide-category{
     display: none;
