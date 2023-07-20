@@ -55,7 +55,6 @@ productImg.forEach((img) =>
     const productName = parentElement.querySelector("#product-title").innerText;
     // console.log(productName);
     captionText.innerText = productName;
-
   })
 );
 
